@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2f63f3ad29.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stick&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pasapalabra</title>
+  </head>
+  <body>
+
+    <img src="img/TV.png" alt="" />
+
+    <video id="video" width="900" autoplay></video>
+    <canvas id="canvas"></canvas>
+
+
+    
+    <button class="round-button" id="a">A</button>
+    <button class="round-button" id="b">B</button>
+    <button class="round-button" id="c">C</button>
+    <button class="round-button" id="d">D</button>
+    <button class="round-button" id="e">E</button>
+    <button class="round-button" id="f">F</button>
+    <button class="round-button" id="g">G</button>
+    <button class="round-button" id="h">H</button>
+    <button class="round-button" id="i">I</button>
+    <button class="round-button" id="j">J</button>
+    <button class="round-button" id="k">K</button>
+    <button class="round-button" id="l">L</button>
+    <button class="round-button" id="m">M</button>
+    <button class="round-button" id="n">N</button>
+    <button class="round-button" id="ñ">Ñ</button>
+    <button class="round-button" id="o">O</button>
+    <button class="round-button" id="p">P</button>
+    <button class="round-button" id="q">Q</button>
+    <button class="round-button" id="r">R</button>
+    <button class="round-button" id="s">S</button>
+    <button class="round-button" id="t">T</button>
+    <button class="round-button" id="u">U</button>
+    <button class="round-button" id="v">V</button>
+    <button class="round-button" id="w">W</button>
+    <button class="round-button" id="x">X</button>
+    <button class="round-button" id="y">Y</button>
+    <button class="round-button" id="z">Z</button>
+
+    <div class="overlay">
+      <div class="top">
+        <div class="top-left">
+
+          <input type="text" placeholder="Nombre" id="playerNameBox" readonly/>
+          
+          <div class="answers">
+
+            <input type="text" placeholder="0" id="correct-answers" readonly/>
+            <input type="text" placeholder="0" id="incorrect-answers" readonly/>
+
+          </div>
+
+        </div>
+
+        <div class="top-right">
+
+          <span id="count"></span>
+
+        </div>
+
+      </div>
+
+      <div class="middle">    </div>
+
+      <div class="bottom">
+
+        <input type="text" placeholder="Question" id="questionBox" readonly />
+        <input type="text" placeholder="Answer" id="answerBox" />
+
+      </div>
+
+
+    </div>
+
+    <input type="checkbox" id="btn-modal" />
+    <label for="btn-modal" class="lbl-empezar"><i class="fas fa-power-off"></i></label>
+
+    <div class="modal">
+      <div class="container">
+        <div class="modal-header">
+          
+          <header id="modal-header">Bienvenido a Pasapalabra</header>
+          <label for="btn-modal">X</label>
+
+        </div>
+
+        <p id="ranking"></p>
+        <div class="modal-contain">
+
+          <input type="text" placeholder="Nombre de Jugador" id="player-name"></input>
+          <label for="btn-modal" id="player-name-button"><i class="far fa-play-circle"></i></label> 
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
